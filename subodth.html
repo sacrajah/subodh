@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://use.fontawesome.com/8c6ac20336.js"></script>
+    <script src="https://use.fontawesome.com/8c6ac20336.js"></script>
+ 
+    <style>
+        body {
+            background: black;
+            
+          background:linear-gradient( 45deg, purple , pink, yellow , green);
+        }
+        button {
+          width: 150px;
+            height: 45px;
+            margin-left: 500px;
+            background-color: rgb(82, 26, 212);
+            border-radius: 50%;
+            box-shadow: -3px -5px 2px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .loader {
+            display: grid;
+            list-style: none;
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: repeat(15, 20px);
+            grid-auto-flow: coloumn dense;
+            grid-auto-columns: repeat(auto-fill, minmax( 200px 300px));
+            gap:50px;
+            border:13px solid rgb(206, 211, 142);
+            box-shadow:  13px 10px 20px 15px rgba(212, 76, 76, 0.5);
+background-image: url('./subodh.jpg');
+background-size: cover;
+border-radius: 50%;
+
+        }
+        .zero{
+         grid-column: 3/4;
+        }
+        .h {
+          grid-column: ;
+        }
+        .loader li {
+
+ width: 4rem;
+ height: 4rem;
+ background: #36ffc1;
+border-radius: 50%;
+/* animation: glow  1s ease-in-out infinite alternate; */
+padding: 2px;
+        }
+
+        @keyframes loader {
+0% { transform: translateX(-57px);}
+0% { transform: translateX(87px);}
+20% { transform: translateY(-87px);}
+30% { background-color: rgb(23, 20, 206);}
+50%{box-shadow :  15px 10px 3px 6px rgba(212, 76, 76, 0.5);}
+60% { background:linear-gradient( 90deg, purple , rgb(235, 87, 111), green);
+}
+51%{transform: translateX(-3px);}
+70% { background-color: gold;}
+90%{box-shadow :  0px 0px 3px 7px rgb(253, 250, 250);}
+
+6%{transform: scale(1.5);}
+100% { transform: translateY(45px);}            
+
+        }
+
+        @keyframes glow {
+          from { background-color: gold;}
+          to { background-color: rgb(99, 227, 236);}
+           
+        }
+/* for screen till 600px */
+@media screen and (max-width: 800px) {
+  .loader {
+    margin-left: 340px;
+    display: grid;
+    list-style: none;
+ grid-template-columns: repeat(15, 60px);
+  grid-auto-columns: repeat(auto-fill , minmax(20px, 30px));
+width: 600px;
+height: 600px;
+  grid-gap:1px;
+  border:1px solid white;
+background-image: url('./subodh.jpg');
+background-repeat: no-repeat;
+
+background-size:cover;
+border-radius: 50%;
+        }
+.loader li {
+margin-top: 1px;
+font-size: 25px;
+width: 1rem;
+height: 1rem;
+padding: 15px;
+text-transform: uppercase;
+  }   
+        .s{
+          font-size: 70px;
+                         }
+        .h {
+         
+        }
+       
+}  
+
+@media screen and (max-width: 800px) {
+  button {
+          width: 150px;
+            height: 45px;
+            margin-left:300px;
+            border-radius: 20%;
+            
+            background-color: rgb(129, 137, 160);
+            
+        }
+ 
+}
+
+@media screen and (max-width: 800px) {
+@keyframes loader {
+0% { transform: translateX(-45px);}
+0% { transform: translateX(45px);}
+20% { transform: translateY(37px);}
+30% { background-color: rgb(23, 20, 206);}
+50%{box-shadow :  0px px 2px 2px rgba(212, 76, 76, 0.5);}
+/* 60% { background:linear-gradient( 45deg, purple , rgb(235, 87, 111), green); */
+/* } */
+51%{transform: translateX(-3px);}
+70% { background-color: gold;}
+90%{box-shadow :  0px 0px 3px 7px rgb(253, 250, 250);}
+
+6%{transform: scale(.8);}
+100% { transform: translateY(25px);}            
+
+        }
+
+
+        
+}
+@media screen and (max-width: 800px) {
+ 
+}
+
+        .loader :nth-child(1){
+   
+            animation-delay: 0s;
+        }
+        .loader :nth-child(2){
+
+            animation-delay: .2s;
+        }
+        .loader :nth-child(3){
+            animation-delay: .4s;
+        } 
+         .loader :nth-child(4){
+            animation-delay: .6s;
+        } 
+         .loader :nth-child(5){
+            animation-delay: .8s;
+        }  
+        .loader :nth-child(6){
+            animation-delay: 1s;
+        }
+        .loader :nth-child(7){
+            animation-delay: 1.2s;
+        }  
+        .loader :nth-child(8){
+            animation-delay: 1.4s;
+        }  
+        .loader :nth-child(9){
+            animation-delay: 1.6s;
+        }
+         
+          .loader :nth-child(10){
+            animation-delay: 1.8s;
+        } 
+         .loader :nth-child(11){
+            animation-delay: 2s;
+        }
+          .loader :nth-child(12){
+            animation-delay: 2.2s;
+        }
+          .loader :nth-child(13){
+            animation-delay: 2.4s;
+        } 
+         .loader :nth-child(14){
+            animation-delay: 2.6s;
+        }
+          .loader :nth-child(15){
+            animation-delay: 2.8s;
+        } 
+         .loader :nth-child(16){
+            animation-delay: 3s;
+        } 
+         .loader :nth-child(17){
+            animation-delay: 3.2s;
+        }
+          .loader :nth-child(18){
+            animation-delay: 3.4s;
+        } 
+         .loader :nth-child(19){
+            animation-delay: 3.6s;
+        }
+         .loader :nth-child(20){
+            animation-delay: 3.8s;
+        }
+         .loader :nth-child(21){
+            animation-delay: 4s;
+        }
+        .loader :nth-child(22){
+            animation-delay: 4.2s;
+        }
+         .loader :nth-child(23){
+            animation-delay: 4.4s;
+        }
+      
+          .loader :nth-child(59){
+            animation-delay: 12s;
+        }
+     
+li {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+.c{
+  animation: loader 8s ease-in-out infinite alternate;
+}
+h1 {
+ height: 150px;
+ font-size: 40px;
+ font-weight: 700; 
+ border-radius: 50%;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+/* blinking text */
+.blink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+		width:400px;
+		height: 400px;
+	  background-color: magenta;
+		padding: 5px;	
+    z-index:1;
+		text-align: center;
+		line-height: 2rem;
+    transform-origin: bottom;
+    /* transition: .4s; */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	animation: loa 11s infinite  ease-in-out alternate-reverse;
+  }
+  @keyframes loa {
+    from{transform:rotate(360deg);}
+    to{transform:rotate(-360deg);}
+    t0{ transform-origin: bottom;
+    transform: scale(.4);}
+  }
+	span{
+	
+  	font-size: 25px;
+		font-family: cursive;
+		color: white;
+		animation: blink 2s linear infinite;
+	}
+@keyframes blink{
+0%{opacity: .10;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+@media screen and (max-width: 800px) {
+  .loader {
+    background-color: rgb(24, 26, 27);
+  }
+
+}
+.fas {
+  font-size: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+    </style>
+</head>
+
+<body>
+  <div class="font">
+    <i class="fas fa-ad"></i>
+      </div> 
+      
+  <section>
+      <ul class="loader">
+
+     <li style="color:gold" >C</li>
+     <li>o</li>
+     <li>n</li>
+     <li>g</li>
+     <li>r</li>
+     <li>u</li>
+     <li>l</li>
+     <li>a</li>
+     <li>t</li>
+     <li>i</li>
+     <li>o</li>
+     <li id="n">n</li>
+     <li style="color:gold" >s</li>
+     <li>!</li>
+     <li class="zero"></li>
+     <li style="color:red" class="s">S</li>
+     <li>u</li>
+     <li>b</li>
+     <li>o</li>
+     <li>d</li>
+     <li class="h" style="color:red">h</li>
+     <li></li>
+     
+    </ul>
+    <h1 class="blink"> <span> For your promotion <br> as DGM </span></h1>
+    </section>
+    <button class="btn">Click here</button>
+   
+    <script>
+const btn = document.querySelector('button')
+//  const load = document.querySelectorAll('li')
+//  const load = document.querySelector('li:nth-child(3)')
+
+btn.addEventListener('click', change)
+
+function change (){
+// load.classList.add('c')
+var x, i;
+  x = document.querySelectorAll("li");
+  x.forEach(item => {
+   item.style.backgroundColor = "lightblue";
+    item.classList.add('c')
+   item.style.fontSize = '45px'
+   item.style.borderBottom = '20px'
+   item.style.paddingBottom= '10px'
+   item.style.transform =' scale(1.2)'
+   item.style.textTransform= 'uppercase'
+  })
+}
+// setInterval(change, 8000)
+//different media screen
+
+
+    </script>
+</body>
+</html>
